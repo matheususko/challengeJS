@@ -14,13 +14,14 @@ console.log(!true, !false)
   - Se existir, exiba no console a mensagem "Existe um leão no array animals.".
 */
 
-const animals = ['macaco', 'tucano', 'elefante', 'pavão', 'hipopótamo']
 
-if (!animals.includes('leão')) {
-  console.log('Leão não existe no array animals')
-} else {
-  console.log('Existe um leão no array animals')
-}
+// const animals = ['macaco', 'tucano', 'elefante', 'pavão', 'hipopótamo']
+
+// if (!animals.includes('leão')) {
+//   console.log('Leão não existe no array animals')
+// } else {
+//   console.log('Existe um leão no array animals')
+// }
 
 /*
   03
@@ -32,19 +33,19 @@ if (!animals.includes('leão')) {
   "A soma ultrapassou 400. Até aqui, o valor atual é RESULTADO_DA_SOMA."
 */
 
-const randomNumbers = [59, 61, 73, 57, 35, 73, 21, 87, 43]
-let sumResult = 0
-const limit = 400
+// const randomNumbers = [59, 61, 73, 57, 35, 73, 21, 87, 43]
+// let sumResult = 0
+// const limit = 400
 
-for (let i = 0; i < randomNumbers.length; i++) {
-  if (sumResult > limit) {
-    console.log(`A soma ultrapassou ${limit}. Até aqui, o valor atual é ${sumResult}.`)
-    break
-  }
-  sumResult += randomNumbers[i]
-}
+// for (let i = 0; i < randomNumbers.length; i++) {
+//   if (sumResult > limit) {
+//     console.log(`A soma ultrapassou ${limit}. Até aqui, o valor atual é ${sumResult}.`)
+//     break
+//   }
+//   sumResult += randomNumbers[i]
+// }
 
-console.log(sumResult)
+// console.log(sumResult)
 /*
   04
   - Concatene as strings do array abaixo, formando uma frase;
@@ -53,20 +54,20 @@ console.log(sumResult)
   - Exiba a frase no console.
 */
 
-const sentence = ['A', 'certeza', 'dúvida', 'é', 'o', 'princípio', 'da', 'sabedoria.']
-let newSentence = ''
+// const sentence = ['A', 'certeza', 'dúvida', 'é', 'o', 'princípio', 'da', 'sabedoria.']
+// let newSentence = ''
 
-for (let i = 0; i < sentence.length; i++) {
-  const word = sentence[i]
+// for (let i = 0; i < sentence.length; i++) {
+//   const word = sentence[i]
 
-  if (word === 'certeza') {
-    continue
-  }
+//   if (word === 'certeza') {
+//     continue
+//   }
 
-  newSentence += `${word} `
-}
+//   newSentence += `${word} `
+// }
 
-console.log(newSentence)
+// console.log(newSentence)
 /*
   05
   - Itere sobre o array "randomValues" apenas até a 4ª string dele;
