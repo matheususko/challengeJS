@@ -1,31 +1,15 @@
-// Reduce
-// recebe uma função por argumento, e executa uma função para cada item do array, mas é um pouco diferente, por que a gente usa, quando baseado no array original, e precisar reduzir o array a algum tipo de dado: objLiteral, string ou newArray...
+// encadeando methodo de array
 
-// const numbers = [1,2,3]
-
-// const sumResult = numbers.reduce((accumulator, item) => accumulator + item, 0)
-
-// console.log(sumResult) / 6
-
-const phaseScores = [
-    { name: 'Vinicius Costa', score: 337 },
-    { name: 'Roger Melo', score: 43 },
-    { name: 'Matheus Susko', score: 234 },
-    { name: 'Alfredo Braga', score: 261 },
-    { name: 'Pedro H. Silva', score: 491 },
-    { name: 'Vinicius Costa', score: 167 },
-    { name: 'Roger Melo', score: 137 },
-    { name: 'Matheus Susko', score: 135 },
-    { name: 'Ana Paula Rocha', score: 359 },
-    { name: 'Pedro H. Silva', score: 133 }
+const books = [
+    { name: 'Código Limpo', price: 30 },
+    { name: 'O milagrew da manhã', price: 5 },
+    { name: 'Alice no País das Maravilhas', price: 10 },
+    { name: 'Quem Pensa Enriquece', price: 50 },
+    { name: 'O livro da ciência', price: 40 },
 ]
 
-const rogerScore = phaseScores.reduce((accumulator, phaseScore) => {
-    if (phaseScore.name === 'Roger Melo') {
-        accumulator += phaseScore.score
-    }
-
-    return accumulator
-}, 0)
-
-console.log(rogerScore)
+const bookOnSale = books
+    .filter(({ price }) => price > 20)
+    .map(({ name, price }) => 
+        `O preço do livro "${name}" caiu para ${price} reais`)
+debugger
