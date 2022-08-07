@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/custom.css">
+    <link rel="stylesheet" href="./style/custom-form.css">
+
+    <!-- Title customizado -->
+    <title>Bootstrap</title>
+
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    
+                    <h1>Logo</h1>
+
+                </div>
+
+                <div class="col">
+                    
+                    <ul class="nav justify-content-end">
+                        <li class="nav-item"><a class="nav-link active" href="./index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#sobre">Sobre</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#produtos">Produtos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="./index.html#contato">Contato</a></li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="ratio ratio-21x9">
+                    <img src="./img/img01.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-caption">
+                    <h5 class="text-truncate col-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores doloribus amet </h5>
+                    <a href="#" class="btn btn-link stretched-link">Clique aqui</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="./img/img02.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-caption">
+                    <h5 class="text-truncate col-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores doloribus amet </h5>
+                    <a href="#" class="btn btn-link stretched-link">Clique aqui</a>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="ratio ratio-21x9">
+                    <img src="./img/img01.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-caption">
+                    <h5 class="text-truncate col-6">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolores doloribus amet </h5>
+                    <a href="#" class="btn btn-link stretched-link">Clique aqui</a>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bg-info clearfix bg-dark">
+            <a name="" id="" class="btn btn-dark float-end" href="#" role="button">Button</a>
+            <a name="" id="" class="btn link-danger float-start" href="#" role="button">Button</a>
+            <a name="" id="" class="btn link-warning float-start" href="#" role="button">Button</a>
+        </div>
+    </div>
+    
+    
+    <a name="" id="" class="btn btn-link float-start fixed-top" href="#" role="button">Button</a>
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="./bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script>
+        const myCarouselElement = document.querySelector('#carouselExampleFade')
+        const carousel = new bootstrap.Carousel(myCarouselElement, {
+        pause: hover,
+        interval: 1000,
+        })
+    </script>
+</body>
+</html>
