@@ -6,6 +6,8 @@
 # link para análise.
 https://pagespeed.web.dev/
 https://amp.dev/ // para díspositivos móveis
+https://pt.semrush.com/ // teste A/B entre outros.
+SEO Extension // extenção do google.
 # Para um entendimento mais aprofundado
 https://www.w3.org/standards/
 
@@ -47,3 +49,20 @@ https://www.w3.org/standards/
     Robots.txt
     Sitemap.xml
     Ranqueamento
+
+---
+# Boas práticas
+    Código limpo
+    Experiência do usuário
+    Acessibilidade
+    Responsividade
+    Privacidade
+    Internacionalização
+    Performance
+        UX
+        Fast
+        Visual
+        Funcional
+        Plataforma
+        Planejamento
+
